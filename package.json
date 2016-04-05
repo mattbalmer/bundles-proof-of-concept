@@ -1,0 +1,26 @@
+{
+  "name": "tactics-arena",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "gulp"
+  },
+  "devDependencies": {
+    "babelify": "^6.4.0",
+    "browserify": "^13.0.0",
+    "chai": "^3.4.1",
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-env": "^0.4.0",
+    "gulp-inject": "^3.0.0",
+    "gulp-stylus": "^2.2.0",
+    "gulp-sync": "^0.1.4",
+    "mocha": "^2.3.4",
+    "morgan": "^1.6.1",
+    "socket.io-client": "^1.4.4",
+    "stream-series": "^0.1.1",
+    "tsify": "^0.13.2",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

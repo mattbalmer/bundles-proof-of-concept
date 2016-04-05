@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bundle Demo</title>
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/source.css">
+    <!-- endinject -->
+</head>
+
+<body data-tabs>
+
+    <header class="site-header">
+        <span class="site-title">Bundler Demo</span>
+        <ul class="nav-links">
+            <li class="nav-link"> <a href="/" data-tab>Home</a> </li>
+            <li class="nav-link"> <a href="/contact" data-tab>Contact</a> </li>
+            <li class="nav-link"> <a href="/about" data-tab>About</a> </li>
+        </ul>
+    </header>
+
+    <main class="site-main">
+        <div class="tabs-container">
+            <div class="tab" data-tab-content="/" data-requires-bundle="pages/home">
+                <p>Welcome to the home page.</p>
+
+                <button data-alert-button data-message="This is an alert button">Click me!</button>
+            </div>
+            <div class="tab" data-tab-content="/contact" data-requires-bundle="pages/contact">
+                <p>Welcome to the contact page. This won't work until you visit the About page, and load the necessary javascript.</p>
+
+                <label>Enter a dollar amount</label>
+                <input data-update="#formatted" data-filter="currency">
+                <span id="formatted"></span>
+            </div>
+            <div class="tab" data-tab-content="/about" data-requires-bundle="pages/about">
+                <p>Welcome to the about page.</p>
+
+                <label>Enter a dollar amount</label>
+                <input data-update="#formatted2" data-filter="currency">
+                <span id="formatted2"></span>
+            </div>
+        </div>
+    </main>
+
+    <!-- inject:js -->
+    <script src="js/index.js"></script>
+    <!-- endinject -->
+</body>
+</html>
